@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/registerpage"
+    tools:context=".RegisterPage">
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/logosh" />
+
+    <RelativeLayout
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relative"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+       <TextView
+           android:textColor="#E26F00EE"
+           android:textSize="30sp"
+           android:textStyle="bold"
+           android:layout_width="wrap_content"
+           android:id="@+id/tvSignUp"
+           android:layout_height="wrap_content"
+           android:layout_centerHorizontal="true"
+           android:text="Register"/>
+        <LinearLayout
+            android:layout_below="@+id/tvSignUp"
+            android:id="@+id/nameLayout"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/textshap"
+                android:textColor="@android:color/black"
+                android:id="@+id/etFirstName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="FirstName"
+                 />
+
+            <EditText
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/textshap"
+                android:textColor="@android:color/black"
+                android:id="@+id/etLastName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="LastName"
+                 />
+        </LinearLayout>
+
+        <EditText
+
+            android:background="@drawable/textshap"
+            android:layout_below="@+id/nameLayout"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/etNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone Number"
+            />
+        <EditText
+            android:background="@drawable/textshap"
+            android:layout_below="@+id/etNumber"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            />
+        <EditText
+            android:background="@drawable/textshap"
+            android:layout_below="@+id/etEmail"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            />
+        <EditText
+            android:background="@drawable/textshap"
+            android:layout_below="@+id/etPassword"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/etRePassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Re-Password"
+            />
+        <Button
+            android:layout_below="@+id/etRePassword"
+            android:id="@+id/btnRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:text="Register"
+            android:textSize="20dp"
+            android:background="@drawable/buttonshap"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="116dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnRegister"
+            android:layout_marginTop="15sp"
+            android:layout_marginLeft="105dp"
+            android:text="Already Register!"
+            android:textColor="@android:color/black"
+            android:textSize="15dp" />
+
+        <TextView
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/btnRegister"
+            android:layout_toRightOf="@+id/textView4"
+            android:id="@+id/tvRegister"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

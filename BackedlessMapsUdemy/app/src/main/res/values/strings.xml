@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">BackedlessMapsUdemy</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="show_family_location">show family location</string>
+    <string name="login_siam">login siam</string>
+    <string name="login_safat">login safat</string>
+    <string name="login_rahat">login rahat</string>
+    <string name="login_sh">login sh</string>
+</resources>

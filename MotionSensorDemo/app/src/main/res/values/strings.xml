@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MotionSensorDemo</string>
+    <string name="geroscope">Geroscope</string>
+    <string name="acceler">acceler</string>
+</resources>
